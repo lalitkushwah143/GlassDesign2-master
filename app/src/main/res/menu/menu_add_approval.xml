@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/bAddApprovalName" android:icon="@drawable/ic_baseline_audiotrack_24" android:title="Add Name"/>
+    <item android:id="@+id/bAddApprovalImage" android:icon="@drawable/ic_outline_camera_alt_24" android:title="Add Image"/>
+    <item android:id="@+id/bAddApprovalSave" android:icon="@drawable/ic_baseline_save_24" android:title="Save Approval"/>
+
+</menu>

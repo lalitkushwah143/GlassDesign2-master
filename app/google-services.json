@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "953537304712",
+    "firebase_url": "https://lyodata-default-rtdb.firebaseio.com",
+    "project_id": "lyodata",
+    "storage_bucket": "lyodata.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953537304712:android:22a4e6d485f9d313d4273d",
+        "android_client_info": {
+          "package_name": "com.example.android.glass.glassdesign2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953537304712-c4ccmpktob0s0v3pkanijpu4rmk2c5qe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCszKglixTK6IXG3uZaVqwAyhrBOabz9iM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953537304712-c4ccmpktob0s0v3pkanijpu4rmk2c5qe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953537304712:android:693f74baa2c4ff43d4273d",
+        "android_client_info": {
+          "package_name": "com.example.android.glass.glasstest3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953537304712-c4ccmpktob0s0v3pkanijpu4rmk2c5qe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCszKglixTK6IXG3uZaVqwAyhrBOabz9iM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953537304712-c4ccmpktob0s0v3pkanijpu4rmk2c5qe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953537304712:android:f0fa3d2d8df22971d4273d",
+        "android_client_info": {
+          "package_name": "com.genius.appdesign2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953537304712-c4ccmpktob0s0v3pkanijpu4rmk2c5qe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCszKglixTK6IXG3uZaVqwAyhrBOabz9iM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953537304712-c4ccmpktob0s0v3pkanijpu4rmk2c5qe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

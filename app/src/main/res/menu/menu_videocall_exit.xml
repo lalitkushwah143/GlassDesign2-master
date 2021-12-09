@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/bResumeCall" android:title="Resume Call" />
+    <item android:id="@+id/bExitCall" android:title="Exit Call"/>
+
+</menu>

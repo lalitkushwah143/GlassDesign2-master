@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/bMonitor" android:icon="@drawable/ic_baseline_tv_24" android:title="@string/monitor"/>
+    <item android:id="@+id/bHelp" android:icon="@drawable/ic_baseline_help_outline_24" android:title="@string/help" />
+    <item android:id="@+id/bPlayVideo" android:icon="@drawable/ic_baseline_play_circle_outline_24" android:title="@string/play_video" />
+    <item android:id="@+id/bVideoCall" android:icon="@drawable/ic_baseline_videocam_24" android:title="@string/video_call"/>
+    <item android:id="@+id/bTheme" android:icon="@drawable/ic_baseline_palette_24" android:title="@string/change_theme"/>
+
+</menu>

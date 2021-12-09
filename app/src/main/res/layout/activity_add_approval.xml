@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_grey"
+    tools:context=".AddApprovalActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/activity_add_approval_layout"
+        android:background="@android:color/black"
+        >
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_baseline_class_24"
+            android:id="@+id/activity_add_approval_imageview"
+            android:padding="20dp"
+            android:background="@android:color/black"
+            app:tint="@color/design_yellow2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/activity_add_approval_imageview"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/activity_add_approval_imageview"
+            android:text="Add New Approval"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:paddingLeft="20sp"
+            android:background="@android:color/black"
+            android:id="@+id/activity_add_approval_tvTitle"/>
+
+        <TextView
+            android:id="@+id/activity_add_approval_tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:background="@android:color/black"
+            android:padding="20dp"
+            android:text="Time"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/activity_add_approval_imageview"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/activity_specs_tvHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Tap: For Options"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_margin="16dp"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/add_approval_tv1"
+        style="@style/TestTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Name: "
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_add_approval_layout" />
+
+    <TextView
+        android:id="@+id/add_approval_tvName"
+        style="@style/TestTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/add_approval_tv1"
+        app:layout_constraintTop_toBottomOf="@id/activity_add_approval_layout" />
+
+    <TextView
+        android:id="@+id/add_approval_tv2"
+        style="@style/TestTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date: "
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_approval_tvName" />
+
+    <TextView
+        android:id="@+id/add_approval_tvDate"
+        style="@style/TestTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/add_approval_tv2"
+        app:layout_constraintTop_toBottomOf="@id/add_approval_tvName" />
+
+    <ImageView
+        android:id="@+id/add_approval_imageview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_approval_tvDate"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

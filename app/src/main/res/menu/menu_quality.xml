@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/bAccept" android:icon="@drawable/ic_baseline_check_24" android:iconTint="@color/design_green" android:title="@string/accept"/>
+    <item android:id="@+id/bReject" android:icon="@drawable/ic_baseline_clear_24" android:iconTint="@color/design_red" android:title="@string/reject"/>
+    <item android:id="@+id/bIssue" android:icon="@drawable/ic_baseline_help_outline_24" android:iconTint="@color/design_yellow" android:title="@string/have_an_issue"/>
+
+</menu>

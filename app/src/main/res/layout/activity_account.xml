@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_grey"
+    tools:context=".AccountActivity">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_baseline_account_circle_24"
+        android:id="@+id/activity_monitor_imageview"
+        android:padding="20dp"
+        android:background="@android:color/black"
+        app:tint="@color/color_yellow_light" />
+
+    <TextView
+        android:id="@+id/activity_account_tvChoose"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Account | About"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textAlignment="viewStart"
+        android:background="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@id/activity_monitor_imageview"
+        app:layout_constraintLeft_toRightOf="@id/activity_monitor_imageview"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/activity_account_tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@android:color/black"
+        android:padding="20dp"
+        android:text="Time"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/activity_monitor_imageview"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/activity_account_tvUser"
+        style="@style/StepTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="Username"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_monitor_imageview" />
+
+    <TextView
+        android:id="@+id/activity_account_tvEmail"
+        style="@style/StepTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="Email"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_account_tvUser" />
+
+    <TextView
+        android:id="@+id/activity_account_tvAppName"
+        style="@style/StepTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="@string/app_name"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_account_tvEmail" />
+
+    <TextView
+        android:id="@+id/activity_account_tvVersion"
+        style="@style/StepTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="Version"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_account_tvAppName" />
+</androidx.constraintlayout.widget.ConstraintLayout>

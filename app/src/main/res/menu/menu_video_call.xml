@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/bSendImage" android:title="Change Video Mode" android:icon="@drawable/ic_outline_camera_alt_24" />
+    <item android:id="@+id/bMuteAudio" android:icon="@drawable/ic_baseline_audiotrack_24" android:title="Mute/Unmute Device Audio"/>
+    <item android:id="@+id/bMuteSubAutio" android:icon="@drawable/ic_baseline_audiotrack_24" android:title="Mute/Unmute all" />
+    <item android:id="@+id/bMuteVideo" android:icon="@drawable/ic_baseline_videocam_24" android:title="Publish/Unpublish Video"/>
+    <item android:id="@+id/bMuteSubVideo" android:icon="@drawable/ic_baseline_videocam_24" android:title="Enable/Disable Streams" />
+
+</menu>

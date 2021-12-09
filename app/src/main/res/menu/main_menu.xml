@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright 2019 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:id="@+id/bHelp" android:icon="@drawable/ic_baseline_help_outline_24" android:title="@string/help" />
+  <item android:id="@+id/bPlayVideo" android:icon="@drawable/ic_baseline_play_circle_outline_24" android:title="@string/play_video" />
+  <item android:id="@+id/bManual" android:icon="@drawable/ic_baseline_class_24" android:title="@string/lyo_manual"/>
+  <item android:id="@+id/bScanner" android:icon="@drawable/ic_baseline_qr_code_24" android:title="@string/qr_scanner"/>
+  <item android:id="@+id/bMonitor" android:icon="@drawable/ic_baseline_tv_24" android:title="@string/monitor"/>
+  <item android:id="@+id/bVideoCall" android:icon="@drawable/ic_baseline_videocam_24" android:title="@string/video_call"/>
+  <item android:id="@+id/bFirebase" android:icon="@drawable/ic_baseline_info_24" android:title="@string/tap_count"/>
+</menu>

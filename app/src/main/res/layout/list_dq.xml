@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/list_dq_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_gravity="center"
+        app:cardCornerRadius="8dp"
+        android:elevation="8dp"
+        app:layout_constraintDimensionRatio="1"
+        android:id="@+id/list_dq_cardview"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="@color/design_grey3">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Module"
+                app:layout_constraintBottom_toTopOf="@id/list_dq_title"
+                android:id="@+id/list_dq_tvModule"/>
+
+            <TextView
+                android:id="@+id/list_dq_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Steaam sterlixable sconsts fdomd"
+                android:textColor="@color/design_yellow2"
+                android:textSize="25dp"
+
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textSize="20dp"
+                android:text="Tap to open"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:background="@color/design_black2"
+                android:id="@+id/list_dq_tvBottom"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ImageView
+        android:id="@+id/list_dq_ivAction"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:visibility="gone"
+        app:srcCompat="@drawable/ic_baseline_touch_app_24"
+        app:tint="@android:color/white" />
+</androidx.constraintlayout.widget.ConstraintLayout>

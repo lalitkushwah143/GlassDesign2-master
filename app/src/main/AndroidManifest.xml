@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.android.glass.glassdesign2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.ar"
+        android:required="true" />
+
+    <application
+        android:name=".GlassDesign2"
+        android:allowBackup="true"
+        android:icon="@drawable/arizon_logo_white"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/glass"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".InstrumentActivity"
+            android:screenOrientation="sensorLandscape"
+            android:exported="true" />
+        <activity
+            android:name=".DQReportActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".Component2Activity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".AbbreviationActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".AttachActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".SafetyActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".Design2Activity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".DesignActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".AddApprovalActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".Approval2Activity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ApprovalActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ComponentActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ModuleActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".SpecsActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".DescActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ContentActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".DQNewActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".Camera2Activity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".AccountActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".CommentActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".MediaActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".AlternativeActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".CommandActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".VideoQualityActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".VideoPrefsActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".MachinesActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".PrepareActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ViewManualActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".SelectActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".MultiVideoCallActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".VideoPlayground"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ContactActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ThemeActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".DQActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ResultActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".TestActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".Report"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ChartActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".JobActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".QualityActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ScanActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ScanResultActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ScannerActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".VideoActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="sensorLandscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="com.google.android.glass.category.DIRECTORY" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TutorialActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".CameraActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".LyoManualActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".VideoCallActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".MonitorActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".ManualActivity"
+            android:screenOrientation="sensorLandscape" />
+        <!--
+      Changes Glass touchpad response from the following key strokes:
+        - Enter
+        - Tab
+        - Shift + Tab
+        - Back button
+        - Home button
+        - Arrows
+      to the motion events, enabling this app to use the touch gestures.
+        -->
+        <meta-data
+            android:name="com.google.android.glass.TouchEnabledApplication"
+            android:value="true" />
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".menu.MenuActivity"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/MenuTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.android.glass.glassdesign2.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="required" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

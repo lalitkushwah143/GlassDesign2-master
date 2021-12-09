@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/manual" android:icon="@drawable/ic_baseline_help_outline_24" android:title="manual" />
+    <item android:id="@+id/job" android:icon="@drawable/ic_baseline_play_circle_outline_24" android:title="job" />
+    <item android:id="@+id/monitor" android:icon="@drawable/ic_baseline_class_24" android:title="monitor"/>
+    <item android:id="@+id/bCommand4" android:icon="@drawable/ic_baseline_help_outline_24" android:title="design" />
+    <item android:id="@+id/bCommand5" android:icon="@drawable/ic_baseline_play_circle_outline_24" android:title="machine" />
+
+</menu>

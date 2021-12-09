@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChartActivity">
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/activity_chart_chart"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="4dp"
+        />
+    <com.github.mikephil.charting.charts.BarChart
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"
+        android:id="@+id/activity_chart_barchart"/>
+
+
+
+    <TextView
+        android:id="@+id/activity_chart_tvPressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@android:color/white"
+        android:text="Presssure"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@id/activity_chart_chart" />
+
+    <TextView
+        android:id="@+id/activity_chart_tvTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@android:color/white"
+        android:text="Temp"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/activity_chart_tvPressure" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/activity_chart_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/glass_card_margin"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_chart_tvTitle1">
+
+        <TextView
+            android:id="@+id/activity_chart_tvZero"
+            style="@style/TestTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Expected Values: "
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/activity_chart_tvReal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/activity_chart_barPositive"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:pointerIcon="cell"
+            android:progress="30"
+            android:progressTint="@color/color_critical"
+            android:scaleY="3"
+            app:layout_constraintLeft_toRightOf="@id/activity_chart_barNegative"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_chart_tvZero" />
+
+        <ProgressBar
+            android:id="@+id/activity_chart_barNegative"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:pointerIcon="cell"
+            android:progress="50"
+            android:progressTint="@color/color_critical"
+            android:rotation="180"
+            android:scaleY="3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/activity_chart_barPositive"
+            app:layout_constraintTop_toBottomOf="@id/activity_chart_tvZero" />
+
+        <TextView
+            android:id="@+id/activity_chart_tvReal"
+            style="@style/TestTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Realtime Values: "
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_chart_barPositive" />
+
+        <ProgressBar
+            android:id="@+id/activity_chart_barPositiveReal"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:pointerIcon="cell"
+            android:progress="30"
+            android:progressTint="@color/color_critical"
+            android:scaleY="3"
+            app:layout_constraintLeft_toRightOf="@id/activity_chart_barNegativeReal"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_chart_tvReal" />
+
+        <ProgressBar
+            android:id="@+id/activity_chart_barNegativeReal"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:pointerIcon="cell"
+            android:progress="50"
+            android:progressTint="@color/color_critical"
+            android:rotation="180"
+            android:scaleY="3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/activity_chart_barPositiveReal"
+            app:layout_constraintTop_toBottomOf="@id/activity_chart_tvReal" />
+
+        <TextView
+            android:id="@+id/activity_chart_tvAlert"
+            style="@style/TestTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/activity_chart_tvTimeReal"
+            app:layout_constraintTop_toBottomOf="@+id/activity_chart_barNegativeReal" />
+
+        <TextView
+            android:id="@+id/activity_chart_tvTimeReal"
+            style="@style/TestTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/activity_chart_tvAlert"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_chart_barNegativeReal" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/activity_chart_tvTitle1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/color_red_light"
+        android:padding="10dp"
+        android:text="Temperature"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/activity_chart_tvTitle2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/color_green_light"
+        android:padding="10dp"
+        android:text="Pressure"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/activity_chart_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/glass_card_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_chart_tvTitle2">
+
+
+        <TextView
+            android:id="@+id/activity_chart_tvZero2"
+            style="@style/TestTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Expected Values: "
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/activity_chart_tvReal2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/activity_chart_barPositive2"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:pointerIcon="cell"
+            android:progress="30"
+            android:progressTint="@color/color_critical"
+            android:scaleY="3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_chart_tvZero2" />
+
+
+        <TextView
+            android:id="@+id/activity_chart_tvReal2"
+            style="@style/TestTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Realtime Values: "
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_chart_barPositive2" />
+
+        <ProgressBar
+            android:id="@+id/activity_chart_barPositiveReal2"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:pointerIcon="cell"
+            android:progress="30"
+            android:progressTint="@color/color_critical"
+            android:scaleY="3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_chart_tvReal2" />
+
+
+        <TextView
+            android:id="@+id/activity_chart_tvAlert2"
+            style="@style/TestTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/activity_chart_tvTimeReal2"
+            app:layout_constraintTop_toBottomOf="@+id/activity_chart_barPositiveReal2" />
+
+        <TextView
+            android:id="@+id/activity_chart_tvTimeReal2"
+            style="@style/TestTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/activity_chart_tvAlert2"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_chart_barPositiveReal2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

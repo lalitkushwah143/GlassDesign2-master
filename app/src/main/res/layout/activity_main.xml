@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_main_layout"
+    android:background="@color/design_grey"
+    tools:context=".ManualActivity">
+
+    <TextView
+        android:id="@+id/activity_main_tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Date"
+        android:textColor="@color/design_yellow2"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/activity_main_tvTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Time"
+        android:textColor="@color/design_yellow2"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/activity_main_tvDate"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/activity_main_tvDate" />
+
+    <TextView
+        android:id="@+id/activity_main_tvMachineTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Machine:"
+        android:textColor="@color/design_yellow2"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_main_tvUser" />
+
+    <TextView
+        android:id="@+id/activity_main_tvUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Welcome"
+        android:textColor="@color/design_yellow2"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_main_tvDate" />
+
+    <ImageView
+        android:id="@+id/activity_main_ivBattery"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_battery_std_24"
+        android:tint="@color/design_yellow2"
+        app:layout_constraintRight_toLeftOf="@id/activity_main_tvBattery"
+        app:layout_constraintTop_toTopOf="@id/activity_main_tvBattery" />
+
+
+    <TextView
+        android:id="@+id/activity_main_tvBattery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Battery"
+        android:textAlignment="center"
+        android:textColor="@color/design_yellow2"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/activity_main_ivLogo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="20dp"
+        android:visibility="gone"
+        android:src="@drawable/arizon_logo_black" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/activity_main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingLeft="@dimen/padding_home"
+        android:paddingRight="@dimen/padding_home"
+        android:paddingEnd="@dimen/padding_home"
+        android:paddingStart="@dimen/padding_home"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_main_tvMachineTitle" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_grey"
+    android:id="@+id/list_dqreport_layout"
+    android:padding="20dp"
+    >
+
+
+    <TextView
+        android:id="@+id/list_dqreport_tv1"
+        style="@style/TestTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Title: "
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/list_dqreport_tvTitle"
+        style="@style/TestTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/list_dqreport_tv1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/list_dqreport_tv2"
+        style="@style/TestTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Description: "
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/list_dqreport_tvTitle" />
+
+    <TextView
+        android:id="@+id/list_dqreport_tvDesc"
+        style="@style/TestTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:maxLines="3"
+        app:layout_constraintLeft_toRightOf="@+id/list_dqreport_tv2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/list_dqreport_tvTitle" />
+
+    <TextView
+        android:id="@+id/list_dqreport_tv3"
+        style="@style/TestTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Date: "
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list_dqreport_tvDesc" />
+
+    <TextView
+        android:id="@+id/list_dqreport_tvTime"
+        style="@style/TestTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:singleLine="false"
+        app:layout_constraintLeft_toRightOf="@+id/list_dqreport_tv3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list_dqreport_tvDesc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

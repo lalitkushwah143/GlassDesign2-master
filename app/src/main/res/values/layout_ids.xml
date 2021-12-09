@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="publisher_view_id" type="id"/>
+
+    <item name="subscriber_1" type="id"/>
+    <item name="subscriber_2" type="id"/>
+    <item name="subscriber_3" type="id"/>
+    <item name="subscriber_4" type="id"/>
+    <item name="subscriber_5" type="id"/>
+    <item name="subscriber_6" type="id"/>
+    <item name="subscriber_7" type="id"/>
+    <item name="subscriber_8" type="id"/>
+    <item name="subscriber_9" type="id"/>
+    <item name="subscriber_10" type="id"/>
+
+    <array name="subscriber_view_ids">
+        <item>@id/subscriber_1</item>
+        <item>@id/subscriber_2</item>
+        <item>@id/subscriber_3</item>
+        <item>@id/subscriber_4</item>
+        <item>@id/subscriber_5</item>
+        <item>@id/subscriber_6</item>
+        <item>@id/subscriber_7</item>
+        <item>@id/subscriber_8</item>
+        <item>@id/subscriber_9</item>
+        <item>@id/subscriber_10</item>
+    </array>
+
+    <item name="publisher_hid" type="id"/>
+
+    <item name="subscriber_h1" type="id"/>
+    <item name="subscriber_h2" type="id"/>
+    <item name="subscriber_h3" type="id"/>
+    <item name="subscriber_h4" type="id"/>
+    <item name="subscriber_h5" type="id"/>
+    <item name="subscriber_h6" type="id"/>
+    <item name="subscriber_h7" type="id"/>
+    <item name="subscriber_h8" type="id"/>
+    <item name="subscriber_h9" type="id"/>
+    <item name="subscriber_h10" type="id"/>
+
+    <array name="subscriber_hids">
+        <item>@id/subscriber_h1</item>
+        <item>@id/subscriber_h2</item>
+        <item>@id/subscriber_h3</item>
+        <item>@id/subscriber_h4</item>
+        <item>@id/subscriber_h5</item>
+        <item>@id/subscriber_h6</item>
+        <item>@id/subscriber_h7</item>
+        <item>@id/subscriber_h8</item>
+        <item>@id/subscriber_h9</item>
+        <item>@id/subscriber_h10</item>
+    </array>
+
+    <item name="bvideo_1" type="id"/>
+    <item name="bvideo_2" type="id"/>
+    <item name="bvideo_3" type="id"/>
+    <item name="bvideo_4" type="id"/>
+    <item name="bvideo_5" type="id"/>
+    <item name="bvideo_6" type="id"/>
+    <item name="bvideo_7" type="id"/>
+    <item name="bvideo_8" type="id"/>
+    <item name="bvideo_9" type="id"/>
+    <item name="bvideo_10" type="id"/>
+
+    <array name="bvideo_view_ids">
+        <item>@id/bvideo_1</item>
+        <item>@id/bvideo_2</item>
+        <item>@id/bvideo_3</item>
+        <item>@id/bvideo_4</item>
+        <item>@id/bvideo_5</item>
+        <item>@id/bvideo_6</item>
+        <item>@id/bvideo_7</item>
+        <item>@id/bvideo_8</item>
+        <item>@id/bvideo_9</item>
+        <item>@id/bvideo_10</item>
+    </array>
+
+
+    <item name="baudio_1" type="id"/>
+    <item name="baudio_2" type="id"/>
+    <item name="baudio_3" type="id"/>
+    <item name="baudio_4" type="id"/>
+    <item name="baudio_5" type="id"/>
+    <item name="baudio_6" type="id"/>
+    <item name="baudio_7" type="id"/>
+    <item name="baudio_8" type="id"/>
+    <item name="baudio_9" type="id"/>
+    <item name="baudio_10" type="id"/>
+
+    <array name="baudio_view_ids">
+        <item>@id/baudio_1</item>
+        <item>@id/baudio_2</item>
+        <item>@id/baudio_3</item>
+        <item>@id/baudio_4</item>
+        <item>@id/baudio_5</item>
+        <item>@id/baudio_6</item>
+        <item>@id/baudio_7</item>
+        <item>@id/baudio_8</item>
+        <item>@id/baudio_9</item>
+        <item>@id/baudio_10</item>
+    </array>
+
+    <item name="tv1" type="id"/>
+    <item name="tv2" type="id"/>
+    <item name="tv3" type="id"/>
+    <item name="tv4" type="id"/>
+    <item name="tv5" type="id"/>
+    <item name="tv6" type="id"/>
+
+    <array name="instrument_tv_ids">
+        <item>@id/tv1</item>
+        <item>@id/tv2</item>
+        <item>@id/tv3</item>
+        <item>@id/tv4</item>
+        <item>@id/tv5</item>
+        <item>@id/tv6</item>
+    </array>
+</resources>
